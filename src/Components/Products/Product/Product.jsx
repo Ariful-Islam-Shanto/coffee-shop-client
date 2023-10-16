@@ -17,7 +17,7 @@ const Product = ({product, products, setProducts}) => {
           })
           .then((willDelete) => {
             if (willDelete) {
-              fetch(`http://localhost:4001/coffees/${_id}`, {
+              fetch(`https://coffee-shop-server-av2394yjk-shantos-projects-4e456a1b.vercel.app/coffees/${_id}`, {
                 method: "DELETE"
               })
               .then(res => res.json())

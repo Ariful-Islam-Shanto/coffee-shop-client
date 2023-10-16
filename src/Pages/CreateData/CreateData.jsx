@@ -26,7 +26,7 @@ const CreateData = () => {
 
         const coffee = {name, supplier, category, chef, taste: taste, details, photo }
 
-        fetch('http://localhost:4001/coffees', {
+        fetch('https://coffee-shop-server-av2394yjk-shantos-projects-4e456a1b.vercel.app/coffees', {
             method: "POST",
             headers: {
                 'content-type' : 'application/json'
